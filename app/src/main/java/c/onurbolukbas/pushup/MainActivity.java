@@ -1,7 +1,9 @@
 package c.onurbolukbas.pushup;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,5 +19,9 @@ public class MainActivity extends AppCompatActivity {
         int ii=2+2;
 
         int iii=i+ii;
+    }
+    public void secondScreen(View view){
+        Intent intent=new Intent(getApplicationContext(),MessageActivity.class);
+        startActivity(intent);
     }
 }
